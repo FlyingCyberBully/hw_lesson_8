@@ -140,7 +140,7 @@ class LoggingEmailService(EmailService):
                     f"{datetime.now()}: "
                     f"FROM {email.sender.masked} "
                     f"TO {msg.recipients[0].masked} "
-                    f"STATUS={msg.status}\n"
+                    f"STATUS={msg.status.value}\n"
                 )
 
         return results
