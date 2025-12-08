@@ -163,4 +163,4 @@ class TestLoggingEmailService:
             content = file.read()
             assert "FROM me***@me.com" in content
             assert "TO yo***@you.com" in content
-            assert "STATUS=sent" in content.lower()
+            assert "STATUS=sent" in content
